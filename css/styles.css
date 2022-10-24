@@ -478,7 +478,6 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--hero-text-color);
-text-align: center;
 }
 .online-form {
     display: flex;
