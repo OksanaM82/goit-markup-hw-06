@@ -408,9 +408,10 @@
       </div>
       <div class="subscription-box">
         <p class="subscription-item">Підпишіться на розсилку</p>
-        <div>
+        
         <form class="online-form">
-          <input type="text" class="online-input" name="subscription" placeholder="E-mail">
+          <input type="text" class="online-input colortext" name="subscription" placeholder="E-mail"
+          required>
           <button type="submit" class="online-btn"> Підписатися
             <svg class="subscription-icone" width="24" height="24">
               <use href="./img/symbol-defs.svg#icon-send" >
@@ -418,7 +419,7 @@
               </svg> 
           </button>
         </form>
-      </div>
+  
       </div>
     </div>
 
@@ -436,7 +437,8 @@
             <label for="name" class="form-lable"> Ім'я</label> 
             <div class="input-wrap">
               
-               <input type="text" class="form-input" name="name" id="name">
+               <input type="text" class="form-input" name="name" id="name"
+               required>
                <svg class="form-icone" width="18" height="18">
                 <use href="./img/symbol-defs.svg#icon-person-black" >
                 </use>
@@ -446,7 +448,8 @@
           <div class="form-field">
             <label for="tel" class="form-lable"> Телефон</label>
             <div class="input-wrap"> 
-            <input type="tel" class="form-input" name="tel" id="tel">
+            <input type="tel" class="form-input" name="tel" id="tel"
+            required>
             <svg class="form-icone" width="18" height="18">
               <use href="./img/symbol-defs.svg#icon-phone-black" >
               </use>
@@ -461,11 +464,13 @@
                 <use href="./img/symbol-defs.svg#icon-email-black-18dp" >
                 </use>
                 </svg> 
-              <input type="email" class="form-input" name="email" id="email">
+              <input type="email" class="form-input" name="email" id="email"
+              required
+              >
             </div>
           </div>
-          <div class="form-field">
-            <label for="comment" class="form-lable"> Кометнтар</label>
+          <div class="form-field form-comment">
+            <label for="comment" class="form-lable"> Коментар</label>
             <textarea name="comment" placeholder="Введіть текст" class="text-box"></textarea>
             
           </div>
@@ -474,7 +479,9 @@
           <div class="checkbox-consent"> 
 
             <input type="checkbox" name=" " value="true" 
-            id="mailing-list"  class="input-chek visually-hidden">
+            id="mailing-list"  class="input-chek visually-hidden"
+           required 
+            >
 
            <label for="mailing-list" class="chek-text">
             <span>
